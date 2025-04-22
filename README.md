@@ -30,27 +30,6 @@ mnb-auto-body/
 └── index.html
 ```
 
-## GitHub Pages Deployment
-
-To deploy this website on GitHub Pages:
-
-1. Create a new GitHub repository
-2. Push this project to your repository:
-   ```
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/mnb-auto-body.git
-   git push -u origin main
-   ```
-3. Go to your repository settings on GitHub
-4. Navigate to "Pages" in the left sidebar
-5. Under "Source", select "Deploy from a branch"
-6. Select the "main" branch and "/ (root)" folder
-7. Click "Save"
-8. Your site will be published at `https://YOUR-USERNAME.github.io/mnb-auto-body/`
-
 ## Local Development
 
 To run this website locally:
@@ -96,12 +75,3 @@ This website is compatible with:
 - Safari (latest)
 - Edge (latest)
 - Opera (latest)
-
-## Notes for Production
-
-Before final deployment:
-
-1. Update the Google Maps embed with the actual shop location
-2. Connect the contact form to a backend service or email system
-3. Add any additional SEO meta tags as needed
-4. Consider adding Google Analytics or similar tracking
