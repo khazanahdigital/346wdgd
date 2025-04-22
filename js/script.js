@@ -135,4 +135,27 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // Gallery items scroll animation
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    function checkGalleryItems() {
+        const triggerBottom = window.innerHeight * 0.8;
+        
+        galleryItems.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+            
+            if (itemTop < triggerBottom) {
+                item.classList.add('in-view');
+            } else {
+                item.classList.remove('in-view');
+            }
+        });
+    }
+    
+    // Check gallery items on page load
+    checkGalleryItems();
+    
+    // Check gallery items on scroll
+    window.addEventListener('scroll', checkGalleryItems);
 });
