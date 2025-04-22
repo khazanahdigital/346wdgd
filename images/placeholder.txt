@@ -1,0 +1,1 @@
+This file is a placeholder to ensure the images directory exists. In a production environment, you would replace these with actual images of the auto body shop, work examples, and staff.

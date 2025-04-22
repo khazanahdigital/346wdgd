@@ -1,0 +1,109 @@
+/* Placeholder styles for missing images */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), #2c3e50 !important;
+}
+
+/* Gallery Section */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 250px;
+    background-color: #95a5a6;
+}
+
+.gallery-item::before {
+    content: "Auto Body Work";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+}
+
+.gallery-item:nth-child(1) {
+    background-color: #2c3e50;
+}
+
+.gallery-item:nth-child(1)::before {
+    content: "Collision Repair";
+}
+
+.gallery-item:nth-child(2) {
+    background-color: #e74c3c;
+}
+
+.gallery-item:nth-child(2)::before {
+    content: "Custom Paint";
+}
+
+.gallery-item:nth-child(3) {
+    background-color: #3498db;
+}
+
+.gallery-item:nth-child(3)::before {
+    content: "Dent Removal";
+}
+
+.gallery-item:nth-child(4) {
+    background-color: #2ecc71;
+}
+
+.gallery-item:nth-child(4)::before {
+    content: "Frame Repair";
+}
+
+.gallery-item:nth-child(5) {
+    background-color: #f39c12;
+}
+
+.gallery-item:nth-child(5)::before {
+    content: "Classic Restoration";
+}
+
+.gallery-item:nth-child(6) {
+    background-color: #9b59b6;
+}
+
+.gallery-item:nth-child(6)::before {
+    content: "Modern Repair";
+}
+
+/* About Section */
+.about-image {
+    position: relative;
+    height: 400px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.about-image::before {
+    content: "M&B Auto Body Shop";
+    font-size: 24px;
+}
+
+/* Hide actual images if they don't load properly */
+.gallery-item img, .about-image img {
+    opacity: 0.5;
+}
+
+/* Testimonial backgrounds */
+.testimonial-content {
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+/* Service icons with better contrast */
+.service-icon {
+    background-color: #f8f9fa;
+}
