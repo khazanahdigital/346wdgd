@@ -140,21 +140,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const galleryItems = document.querySelectorAll('.gallery-item');
     
     function checkGalleryItems() {
-        const triggerBottom = window.innerHeight * 0.8;
+        const triggerBottom = window.innerHeight * 0.85; // Increased trigger point for earlier animation
         
-        galleryItems.forEach(item => {
+        galleryItems.forEach((item, index) => {
             const itemTop = item.getBoundingClientRect().top;
             
             if (itemTop < triggerBottom) {
-                item.classList.add('in-view');
-            } else {
-                item.classList.remove('in-view');
+                // Add staggered delay based on item index
+                setTimeout(() => {
+                    item.classList.add('in-view');
+                }, index * 100); // 100ms delay between each item
             }
         });
     }
     
     // Check gallery items on page load
-    checkGalleryItems();
+    window.addEventListener('load', checkGalleryItems);
     
     // Check gallery items on scroll
     window.addEventListener('scroll', checkGalleryItems);
